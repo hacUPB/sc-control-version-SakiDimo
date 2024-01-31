@@ -6,15 +6,14 @@ int main(int argc, char *argv[]) {
         fprintf(stderr,"Usage: program <number>\n");
         return 1;
     }
-    
     int number = atoi(argv[1]); //Convert the console input argument to an integer
 
     /*It must be verified that the entered number is greater than or equal to zero*/
-    
+
     if(number < 0)
     {
-        perror("The number must be greater than or equal to zero\n");
-        exit(1);
+        fprintf(stderr,"The number must be greater than or equal to zero\n");
+        return(1);
     }
     /*Implement the function that calculates the factorial of the input argument*/
     
