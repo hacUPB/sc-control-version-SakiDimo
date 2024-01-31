@@ -8,8 +8,9 @@ int main(int argc, char *argv[]) {
     }
     
     int number = atoi(argv[1]); //Convert the console input argument to an integer
-    
+
     /*It must be verified that the entered number is greater than or equal to zero*/
+    
     if(number < 0)
     {
         perror("The number must be greater than or equal to zero\n");
