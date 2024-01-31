@@ -16,8 +16,15 @@ int main(int argc, char *argv[]) {
         return(1);
     }
     /*Implement the function that calculates the factorial of the input argument*/
+    int factorial = 1;
+    int b;
+    for (b = number; b > 1; b--)
+    {
+        factorial *= b;
+    }
     
     /*Print the result*/
+    printf("the factorial of" number "is" factorial ",number,factorial);
     
     /*Implement the function that calculates if the argument is a prime number*/
 
